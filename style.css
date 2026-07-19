@@ -1,0 +1,321 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    background:#aa614a;
+}
+
+/* Images */
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* Header */
+
+header{
+    width:90%;
+    margin:30px auto;
+    background:#fdf3ea;
+    border-radius:20px;
+    padding:20px 40px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:35px;
+    font-family:"Cormorant Garamond",serif;
+    color:#5c382d;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#351f0bbd;
+    font-weight:500;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#c97b63;
+}
+
+.icons{
+    display:flex;
+    gap:20px;
+}
+
+.icons a{
+    color:#222;
+    font-size:20px;
+    transition:.3s;
+}
+
+.icons a:hover{
+    color:#c97b63;
+}
+
+/* Hero */
+
+.hero{
+    width:90%;
+    margin:70px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+}
+
+.hero-text{
+    width:45%;
+}
+
+.hero-text h1{
+    font-size:65px;
+    color:#fff;
+    font-family:"Cormorant Garamond",serif;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    color:#ddd;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#d88c6a;
+    color:#fff;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#b87657;
+}
+
+.hero-image{
+    width:50%;
+}
+
+.hero-image img{
+    border-radius:20px;
+    transition:.3s;
+}
+
+.hero-image img:hover{
+    transform:scale(1.05);
+}
+
+/* Products */
+
+.products{
+    width:90%;
+    margin:90px auto;
+}
+
+.products h2{
+    color:#fff;
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+    font-family:"Cormorant Garamond",serif;
+}
+
+.product-container{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.card{
+    width:23%;
+    background:#fdf3ea;
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,.3);
+}
+
+.card img{
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#c97b63;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.buy-btn{
+    display:inline-block;
+    padding:10px 20px;
+    background:#d88c6a;
+    color:#fff;
+    text-decoration:none;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.buy-btn:hover{
+    background:#b87657;
+}
+
+/* Offer */
+
+.offer{
+    width:90%;
+    margin:90px auto;
+    background:#fdf3ea;
+    border-radius:20px;
+    padding:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.offer-text{
+    width:45%;
+}
+
+.offer-text h2{
+    font-size:55px;
+    color:#3b2b26;
+    font-family:"Cormorant Garamond",serif;
+    margin-bottom:20px;
+}
+
+.offer-text p{
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.offer-image{
+    width:45%;
+}
+
+.offer-image img{
+    border-radius:20px;
+    transition:.3s;
+}
+
+.offer-image img:hover{
+    transform:scale(1.05);
+}
+
+/* Footer */
+
+footer{
+    background:#6b3422;
+    padding:40px;
+    text-align:center;
+}
+
+footer h2{
+    color:#ccc;
+    font-family:"Cormorant Garamond",serif;
+    margin-bottom:15px;
+}
+
+footer p{
+    color:#ccc;
+    margin-bottom:20px;
+}
+
+.social{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.social a{
+    color:#fff;
+    font-size:22px;
+    transition:.3s;
+}
+
+.social a:hover{
+    color:#d88c6a;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .menu{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-text,
+    .hero-image,
+    .offer-text,
+    .offer-image{
+        width:100%;
+    }
+
+    .hero-text h1{
+        font-size:45px;
+    }
+
+    .product-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:90%;
+    }
+
+    .offer{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .offer-image{
+        margin-top:20px;
+    }
+}
